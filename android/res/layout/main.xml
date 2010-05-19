@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TableLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+    <TableRow>
+      <Button
+        android:id="@+id/ConnectButton" />
+      <TextView
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:text="Tilt Control" />
+      <CheckBox
+        android:id="@+id/TiltControl" />
+    </TableRow>
+  </TableLayout>
+  <TableLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0">
+    <TableRow>
+      <TextView
+        android:gravity="center"
+        android:text="Motor A" />
+      <TextView
+        android:gravity="center"
+        android:text="R" />
+      <TextView
+        android:gravity="center"
+        android:text="Link" />
+    </TableRow>
+    <TableRow>
+      <SeekBar
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:max="900"
+        android:id="@+id/MotorASpeed" />
+      <CheckBox
+        android:id="@+id/MotorAReverse" />
+      <CheckBox
+        android:id="@+id/MotorALink" />
+    </TableRow>
+    <TableRow>
+      <TextView
+        android:gravity="center"
+        android:text="Motor B" />
+    </TableRow>
+    <TableRow>
+      <SeekBar
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:max="900"
+        android:id="@+id/MotorBSpeed" />
+      <CheckBox
+        android:id="@+id/MotorBReverse" />
+      <CheckBox
+        android:id="@+id/MotorBLink" />
+    </TableRow>
+    <TableRow
+      android:layout_marginRight="3dip"
+      android:layout_marginLeft="3dip">
+      <TextView
+        android:gravity="center"
+        android:text="Motor C" />
+    </TableRow>
+    <TableRow>
+      <SeekBar
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:max="900"
+        android:id="@+id/MotorCSpeed" />
+      <CheckBox
+        android:id="@+id/MotorCReverse" />
+      <CheckBox
+        android:id="@+id/MotorCLink" />
+    </TableRow>
+  </TableLayout>
+</LinearLayout>

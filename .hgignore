@@ -1,0 +1,7 @@
+syntax: glob
+*.orig
+*.swp
+
+syntax: regexp
+android/(bin|gen)
+
