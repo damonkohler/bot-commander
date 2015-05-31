@@ -1,0 +1,1 @@
+Bot Commander is an Android application that allows remote control (via Bluetooth) of Lego NXT robots from Android.
